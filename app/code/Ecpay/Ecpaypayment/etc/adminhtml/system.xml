@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+    	<section id="payment">
+    		<group id="ecpay_ecpaypayment" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+    			<label>ECPay 整合金流</label>
+                <field id="version" type="text" translate="label comment" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Ecpay\Ecpaypayment\Block\Adminhtml\System\Config\Form\Version</frontend_model>
+                </field>
+    			<field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>啟用</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="ecpay_merchant_id" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>商店代號</label>
+                    <comment>MerchantID</comment>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="ecpay_hash_key" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>金鑰</label>
+    				<comment>HashKey</comment>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="ecpay_hash_iv" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>向量</label>
+    				<comment>HashIV</comment>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="ecpay_payment_methods" translate="label" type="multiselect" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>付款方式</label>
+                    <source_model>Ecpay\Ecpaypayment\Model\Config\Source\PaymentMethods</source_model>
+    				<comment>多選: Ctrl + 選取</comment>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>訂單建立狀態</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status\NewStatus</source_model>
+                </field>
+                <field id="ecpay_success_status" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>付款完成狀態</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                </field>
+                <field id="ecpay_failed_status" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>付款失敗狀態</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                </field>
+                <field id="allowspecific" translate="label" type="allowspecific" sortOrder="9" showInDefault="1"
+                       showInWebsite="1" showInStore="0">
+                    <label>適用國家</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="0">
+                    <label>指定國家</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                </field>
+    		</group>
+    	</section>
+	</system>
+</config>

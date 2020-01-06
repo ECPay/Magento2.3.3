@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<ecpay_ecpaypayment>
+				<model>Ecpay\Ecpaypayment\Model\Payment</model>
+				<title>綠界整合金流</title>
+				<active>0</active>
+				<order_status>pending</order_status>
+				<ecpay_merchant_id>2000132</ecpay_merchant_id>
+				<ecpay_hash_key>5294y06JbISpM5x9</ecpay_hash_key>
+				<ecpay_hash_iv>v77hoKGq4kWxNNIS</ecpay_hash_iv>
+				<ecpay_success_status>processing</ecpay_success_status>
+				<ecpay_failed_status>holded</ecpay_failed_status>
+				<allowspecific>0</allowspecific>
+				<payment_action>sale</payment_action>
+			</ecpay_ecpaypayment>
+		</payment>
+	</default>
+</config>
