@@ -15,17 +15,18 @@
                 </field>
                 <field id="ecpay_merchant_id" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>商店代號</label>
-                    <comment>MerchantID</comment>
+                    <comment>測試用MerchantID=2000132</comment>
                     <can_be_empty>1</can_be_empty>
                 </field>
                 <field id="ecpay_hash_key" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>金鑰</label>
-    				<comment>HashKey</comment>
+                    <comment>測試用HashKey=5294y06JbISpM5x9</comment>
                     <can_be_empty>1</can_be_empty>
                 </field>
                 <field id="ecpay_hash_iv" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>向量</label>
-    				<comment>HashIV</comment>
+                    <comment><![CDATA[測試用HashIV=v77hoKGq4kWxNNIS]]><![CDATA[<br>]]><![CDATA[測試用信用卡號=4311-9522-2222-2222]]><![CDATA[<br>]]><![CDATA[測試用信用卡安全碼=222]]><![CDATA[<br>]]><![CDATA[測試用信用卡的有效月/年需輸入大於當下時間的月年]]>
+                    </comment>
                     <can_be_empty>1</can_be_empty>
                 </field>
                 <field id="ecpay_payment_methods" translate="label" type="multiselect" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">

@@ -13,7 +13,7 @@
 "ecpay_payment_text_atm","ATM"
 "ecpay_payment_text_cvs","超商代碼"
 "ecpay_payment_text_barcode","超商條碼"
-"ecpay_payment_order_comment_payment_result","Payment Result : (%1)%2"
+"ecpay_payment_order_comment_payment_result","Payment Result : (%s)%s"
 "ecpay_payment_order_comment_atm","取號結果 : (%s)%s, 銀行代碼 : %s, 虛擬帳號 : %s, 付款截止日 : %s"
 "ecpay_payment_order_comment_cvs","取號結果 : (%s)%s, 繳費代碼 : %s, 付款截止日 : %s"
 "ecpay_payment_order_comment_barcode","取號結果 : (%s)%s, 付款截止日 : %s, 第1段條碼號碼 : %s, 第2段條碼號碼 : %s, 第3段條碼號碼 : %s"
