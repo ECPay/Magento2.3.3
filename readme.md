@@ -113,7 +113,7 @@ php bin/magento setup:static-content:deploy -f
 
 技術支援
 -----------------
-綠界技術客服信箱: techsupport@ecpay.com.tw
+綠界技術服務工程師信箱: techsupport@ecpay.com.tw
 
 
 參考資料
